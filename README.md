@@ -17,7 +17,7 @@ GOG.com で販売されている版を対象に、I から VIII までを順に�
 | ウルティマIV（Ultima IV: Quest of the Avatar） | 公開中 | [Ultima4_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima4-v1.0) |
 | ウルティマV（Ultima V: Warriors of Destiny） | 公開中 | [Ultima5_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima5-v1.0) |
 | ウルティマVI（Ultima VI: The False Prophet） | 公開中 | [Ultima6_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima6-v1.0) |
-| ウルティマVII（Ultima VII: The Black Gate） | 予定 | |
+| ウルティマVII（Ultima VII: The Black Gate ＋ The Forge of Virtue） | 公開中 | [Ultima7_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima7-v1.0) |
 | ウルティマVIII（Ultima VIII: Pagan） | 予定 | |
 
 入れ方と外し方は、サイトの各作品のページをご覧ください。
@@ -30,4 +30,6 @@ GOG.com で販売されている版を対象に、I から VIII までを順に�
 ## クレジット・権利
 
 - 美咲フォント: Copyright (C) 2002-2021 Num Kadoma。自由に利用・複製・再配布できるフリーソフトウエアです。
+- 東雲フォント: The Electronic Font Open Laboratory。Public Domain です。
+- ウルティマVII のパッチは Exult（Copyright (C) The Exult Team、GNU General Public License）に日本語の表示などを加えたものです。ソースは https://github.com/higesho/exult の ja ブランチで公開しています。
 - Ultima は Electronic Arts Inc. の商標です。ゲームの画像・文章の権利は原作の権利者にあります。
