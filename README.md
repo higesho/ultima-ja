@@ -21,6 +21,7 @@ GOG.com で販売されている版を対象に、I から VIII までを順に�
 | ウルティマVII 第2部 サーペントアイル（Ultima VII Part Two: Serpent Isle ＋ The Silver Seed） | 公開中 | [SerpentIsle_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima7si-v1.0) |
 | ウルティマVIII（Ultima VIII: Pagan） | 公開中 | [Ultima8_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima8-v1.0) |
 | ウルティマIX（Ultima IX: Ascension） | 公式日本語版の入れ方を案内 | [紹介ページ](https://higesho.github.io/ultima-ja/ultima9/) |
+| 外伝 マーシャン・ドリームズ（Worlds of Ultima: Martian Dreams） | 公開中 | [MartianDreams_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/martian-v1.0) |
 
 入れ方と外し方は、サイトの各作品のページをご覧ください。
 どのパッチも、ゲームのファイルを書き換えません。配布物には原作のプログラムやデータは入っていません。
