@@ -11,7 +11,7 @@ GOG.com で販売されている版を対象に、I から VIII までを順に�
 
 | 作品 | 状態 | ダウンロード |
 |---|---|---|
-| アカラベス（Akalabeth: World of Doom） | 公開中 | [Akalabeth_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/akalabeth-v1.0) |
+| ウルティマ0 アカラベス（Ultima 0: Akalabeth / Akalabeth: World of Doom） | 公開中 | [Akalabeth_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/akalabeth-v1.0) |
 | ウルティマI（Ultima I: The First Age of Darkness） | 公開中 | [Ultima1_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima1-v1.0) |
 | ウルティマII（Ultima II: The Revenge of the Enchantress） | 公開中 | [Ultima2_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima2-v1.0) |
 | ウルティマIII（Ultima III: Exodus） | 公開中 | [Ultima3_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima3-v1.0) |
