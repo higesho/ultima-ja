@@ -12,7 +12,7 @@ GOG.com で販売されている版を対象に、I から VIII までを順に�
 | 作品 | 状態 | ダウンロード |
 |---|---|---|
 | ウルティマI（Ultima I: The First Age of Darkness） | 公開中 | [Ultima1_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima1-v1.0) |
-| ウルティマII（Ultima II: The Revenge of the Enchantress） | 予定 | |
+| ウルティマII（Ultima II: The Revenge of the Enchantress） | 公開中 | [Ultima2_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima2-v1.0) |
 | ウルティマIII（Ultima III: Exodus） | 予定 | |
 | ウルティマIV（Ultima IV: Quest of the Avatar） | 予定 | |
 | ウルティマV（Ultima V: Warriors of Destiny） | 予定 | |
