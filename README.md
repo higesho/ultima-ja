@@ -19,7 +19,7 @@ GOG.com で販売されている版を対象に、I から VIII までを順に�
 | ウルティマVI（Ultima VI: The False Prophet） | 公開中 | [Ultima6_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima6-v1.0) |
 | ウルティマVII（Ultima VII: The Black Gate ＋ The Forge of Virtue） | 公開中 | [Ultima7_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima7-v1.0) |
 | ウルティマVII 第2部 サーペントアイル（Ultima VII Part Two: Serpent Isle ＋ The Silver Seed） | 公開中 | [SerpentIsle_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima7si-v1.0) |
-| ウルティマVIII（Ultima VIII: Pagan） | 予定 | |
+| ウルティマVIII（Ultima VIII: Pagan） | 公開中 | [Ultima8_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima8-v1.0) |
 
 入れ方と外し方は、サイトの各作品のページをご覧ください。
 どのパッチも、ゲームのファイルを書き換えません。配布物には原作のプログラムやデータは入っていません。
@@ -33,4 +33,6 @@ GOG.com で販売されている版を対象に、I から VIII までを順に�
 - 美咲フォント: Copyright (C) 2002-2021 Num Kadoma。自由に利用・複製・再配布できるフリーソフトウエアです。
 - 東雲フォント: The Electronic Font Open Laboratory。Public Domain です。
 - ウルティマVII とサーペントアイルのパッチは Exult（Copyright (C) The Exult Team、GNU General Public License）に日本語の表示などを加えたものです。ソースは https://github.com/higesho/exult の ja ブランチで公開しています。
+- ウルティマVIII のパッチは、ScummVM（Copyright (C) The ScummVM Team、GNU General Public License）に日本語版を認識させる変更を加えた非公式ビルドで動かします。ソースは https://github.com/higesho/scummvm の ja ブランチで公開しています。
+- PixelMplus: itouhiro、M+ FONTS PROJECT。M+ FONT LICENSE により、自由に利用・複製・再配布できます。
 - Ultima は Electronic Arts Inc. の商標です。ゲームの画像・文章の権利は原作の権利者にあります。
