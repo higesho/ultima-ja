@@ -20,7 +20,7 @@ GOG.com で販売されている版を対象に、I から VIII までを順に�
 | ウルティマV（Ultima V: Warriors of Destiny） | 公開中 | [Ultima5_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima5-v1.0) |
 | ウルティマVI（Ultima VI: The False Prophet） | 公開中 | [Ultima6_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima6-v1.0) |
 | ウルティマVII（Ultima VII: The Black Gate ＋ The Forge of Virtue） | 公開中 | [Ultima7_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima7-v1.0) |
-| ウルティマVII 第2部 サーペントアイル（Ultima VII Part Two: Serpent Isle ＋ The Silver Seed） | 公開中 | [SerpentIsle_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima7si-v1.0) |
+| ウルティマVII 第2部 サーペントアイル（Ultima VII Part Two: Serpent Isle ＋ The Silver Seed） | 公開中 | [SerpentIsle_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima7si-v1.1) |
 | ウルティマVIII（Ultima VIII: Pagan） | 公開中 | [Ultima8_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima8-v1.0) |
 | ウルティマIX（Ultima IX: Ascension） | 公式日本語版の入れ方を案内 | [紹介ページ](https://higesho.github.io/ultima-ja/ultima9/) |
 | 外伝 マーシャン・ドリームズ（Worlds of Ultima: Martian Dreams） | 公開中 | [MartianDreams_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/martian-v1.0) |
