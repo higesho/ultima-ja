@@ -43,7 +43,7 @@
 <p class="tag">GOG.com 版と Steam 版の「Ultima IV: Quest of the Avatar」（DOS 版）を日本語で遊べるようにする、非公式のファンメイドパッチです。
 ジプシーの問いかけによるキャラクター作成から、町の人々との会話、ロード・ブリティッシュやホークウィンドの言葉、店でのやりとり、戦闘、ダンジョン、祠での瞑想、エンディングまで、ゲームの中の文章を日本語にしています。
 ゲームのフォルダにファイルを置くだけで日本語になり、外せば英語に戻ります。</p>
-<p><a class="dl" href="https://github.com/higesho/ultima-ja/releases/tag/ultima4-v1.0">ダウンロード（GitHub）</a></p>
+<p><a class="dl" href="https://github.com/higesho/ultima-ja/releases/tag/ultima4-v1.1">ダウンロード（GitHub）</a></p>
 </section>
 
 <div class="text">
@@ -86,6 +86,32 @@ GOG.com と Steam で販売されているのは DOS 版です。</p>
 <li>Steam 版では、Steam の「ゲームファイルの整合性を確認」で <code>dosboxULTIMA4_single.conf</code> を元に戻します。</li>
 </ul>
 <p>セーブデータは英語版と共通です。日本語版と英語版を行き来しても、続きから遊べます。</p>
+
+<h2>Ultima IV Upgrade（256色・音楽のコミュニティパッチ）と一緒に使う</h2>
+<p>有志が作ったコミュニティパッチ「Ultima IV Upgrade」（v1.3）を当てると、画面が 256 色になり、場面に合わせた音楽が流れるようになります。
+このパッチを当てた状態でも、日本語化パッチはそのまま使えます。256 色の画面でも日本語で表示され、音楽も英語版と同じように切り替わります。</p>
+<ul>
+<li>紹介（英語）: <a href="https://wiki.ultimacodex.com/wiki/Ultima_IV_Upgrade_Patch">Ultima IV Upgrade Patch（The Ultima Codex）</a></li>
+<li>配布元（英語）: <a href="http://www.moongates.com/u4/upgrade/Upgrade.htm">The Moongates Ultima IV Annex</a>（<code>U4UPGRAD.ZIP</code>）</li>
+</ul>
+
+<h3>Upgrade の当て方</h3>
+<ol>
+<li>配布元から <code>U4UPGRAD.ZIP</code> をダウンロードし、中のファイルをすべてゲームのフォルダ（<code>ULTIMA.COM</code> があるフォルダ）に展開します。</li>
+<li>ゲームのフォルダの <code>avpatch.exe</code> をダブルクリックします。256 色版のゲーム本体（<code>avatar.old</code>）が作られます。</li>
+<li>続けて <code>SWITCH.BAT</code> をダブルクリックします。表示や会話のファイルが Upgrade のものに入れ替わります。</li>
+</ol>
+<p>Upgrade に付いている説明では <code>SETUP.BAT</code> を実行することになっていますが、その中の音楽の設定（<code>SETM.EXE</code>）はいまの Windows では動きません。
+上の手順はその設定を飛ばしたもので、設定を変えなくても GOG 版・Steam 版の DOSBox で音楽が流れます。</p>
+<p>もう一度 <code>SWITCH.BAT</code> をダブルクリックすると元の画面に戻り、さらにもう一度で Upgrade に戻ります。どちらの状態でも日本語で遊べます。</p>
+
+<h3>当てたあとの日本語化</h3>
+<ul>
+<li>上の「入れ方」と同じ手順で、日本語化パッチのファイルをゲームのフォルダにコピーし、<code>dosboxULTIMA4_single.conf</code> を上書きします。Upgrade と日本語化パッチは、どちらを先に入れても構いません。</li>
+<li>ほかの道具で <code>dosboxULTIMA4_single.conf</code> が書き換えてある場合は、上書きせずに、その中の <code>ultima.com</code> の行の前に <code>U4JP</code> の1行を足してください。</li>
+<li>Upgrade を当てたまま日本語化だけを外すときは、<code>U4JP.COM</code>、<code>U4JP.DAT</code>、16 個の <code>.TLJ</code> を消し、<code>dosboxULTIMA4_single.conf</code> の <code>U4JP</code> の行を消してください（GOG Galaxy や Steam で修復すると、Upgrade で入れ替えたファイルも元に戻ります）。</li>
+<li>Upgrade v1.3 には、エンディングの途中で止まる不具合が知られています。直した <code>ULTIMA.COM</code> が <a href="https://exodus.voyd.net/2018/05/27/u4-upgrade-endgame-bug/">The Exodus Project</a> で配られています（英語）。</li>
+</ul>
 
 <h2>遊ぶときの注意</h2>
 <ul>

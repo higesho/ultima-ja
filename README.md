@@ -16,7 +16,7 @@ GOG.com で販売されている版を対象に、I から VIII までを順に�
 | ウルティマI（Ultima I: The First Age of Darkness） | 公開中 | [Ultima1_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima1-v1.0) |
 | ウルティマII（Ultima II: The Revenge of the Enchantress） | 公開中 | [Ultima2_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima2-v1.0) |
 | ウルティマIII（Ultima III: Exodus） | 公開中 | [Ultima3_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima3-v1.0) |
-| ウルティマIV（Ultima IV: Quest of the Avatar） | 公開中 | [Ultima4_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima4-v1.0) |
+| ウルティマIV（Ultima IV: Quest of the Avatar） | 公開中 | [Ultima4_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima4-v1.1) |
 | ウルティマV（Ultima V: Warriors of Destiny） | 公開中 | [Ultima5_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima5-v1.0) |
 | ウルティマVI（Ultima VI: The False Prophet） | 公開中 | [Ultima6_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima6-v1.0) |
 | ウルティマVII（Ultima VII: The Black Gate ＋ The Forge of Virtue） | 公開中 | [Ultima7_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima7-v1.0) |
