@@ -43,7 +43,7 @@
 <p class="tag">GOG.com 版の「Worlds of Ultima: Martian Dreams」（DOS 版）を日本語で遊べるようにする、非公式のファンメイドパッチです。
 導入の寸劇、フロイト博士の問診によるキャラクター作成、火星で出会う人々との会話、物の名前、本編のメッセージ、本や手紙、途中の場面、エンディングまで、ゲームの中の文章を日本語にしています。
 ゲームのフォルダにファイルを置くだけで日本語になり、外せば英語に戻ります。</p>
-<p><a class="dl" href="https://github.com/higesho/ultima-ja/releases/tag/martian-v1.0">ダウンロード（GitHub）</a></p>
+<p><a class="dl" href="https://github.com/higesho/ultima-ja/releases/tag/martian-v1.1">ダウンロード（GitHub）</a></p>
 </section>
 
 <div class="text">
@@ -70,7 +70,7 @@ GOG.com で販売されているのは DOS 版です。</p>
 <h2>入れ方</h2>
 <ol>
 <li>ダウンロードした <code>MartianDreams_JP.zip</code> を展開します。</li>
-<li>中身（<code>MARTIAN</code> フォルダと <code>dosboxMARTIAN_single.conf</code>）を、そのままゲームのフォルダ（<code>dosboxMARTIAN_single.conf</code> と <code>MARTIAN</code> フォルダがある所）にコピーします。<code>MARTIAN</code> フォルダには <code>MDJP.COM</code>、<code>MDJP.DAT</code>、<code>MDJP.PAT</code>、<code>MDJPMK.COM</code> の 4 つが加わります。<code>dosboxMARTIAN_single.conf</code> は上書きしてください。</li>
+<li>中身（<code>MARTIAN</code> フォルダと <code>dosboxMARTIAN_single.conf</code>）を、そのままゲームのフォルダ（<code>dosboxMARTIAN_single.conf</code> と <code>MARTIAN</code> フォルダがある所）にコピーします。<code>MARTIAN</code> フォルダには <code>MDJP.COM</code>、<code>MDJP.DAT</code>、<code>MDJP.PAT</code>、<code>MDJPMK.COM</code> の 4 つが加わります。<code>dosboxMARTIAN_single.conf</code> は上書きしてください。<code>DOSBOX</code> フォルダも、ゲームのフォルダの中の <code>DOSBOX</code> フォルダにコピーします（<code>opengl32.dll</code> と <code>ultima_ja.ini</code> が増えます）。</li>
 <li>いつもどおり GOG Galaxy やショートカットから起動します。</li>
 </ol>
 <p>初めて起動すると、会話などの日本語版のファイル（<code>.LZJ</code>、17 個）が作られます。画面に「MDJPMK: TALK.LZJ ok」などと表示されるのがそれです。
@@ -80,8 +80,16 @@ GOG.com で販売されているのは DOS 版です。</p>
 <h2>外し方</h2>
 <ul>
 <li><code>MARTIAN</code> フォルダの <code>MDJP.COM</code>、<code>MDJP.DAT</code>、<code>MDJP.PAT</code>、<code>MDJPMK.COM</code> と、<code>cloud_saves\MARTIAN</code> フォルダに作られた 17 個の <code>.LZJ</code> と <code>MDJPMK.OK</code> を消し、GOG Galaxy の「ファイルの検証/修復」で <code>dosboxMARTIAN_single.conf</code> を元に戻します。</li>
+<li><code>DOSBOX</code> フォルダに増えた <code>opengl32.dll</code> と <code>ultima_ja.ini</code> も消します。</li>
 </ul>
 <p>セーブデータは英語版と共通です。日本語版と英語版を行き来しても、続きから遊べます。</p>
+
+<h2>窓と字の形</h2>
+<ul>
+<li>ゲームは窓で起動します。窓のふちをドラッグすると、大きさを自由に変えられます。最大化もでき、変えた大きさは次の起動でも使われます。Alt＋Enter で全画面に切り替えられます。</li>
+<li>日本語の字の形は、東雲フォント（12ドット）と美咲フォント（8ドット）から選べます。最初は東雲フォントで、ゲーム中に F11 キーを押すと切り替わります。</li>
+<li>設定は <code>DOSBOX</code> フォルダの <code>ultima_ja.ini</code> で変えられます。</li>
+</ul>
 
 <h2>遊ぶときの注意</h2>
 <ul>
@@ -99,6 +107,7 @@ GOG.com で販売されているのは DOS 版です。</p>
 <h2>クレジット</h2>
 <ul>
 <li>日本語の表示に美咲フォント（Copyright &copy; 2002-2021 Num Kadoma）を使っています。美咲フォントは、自由に利用・複製・再配布できるフリーソフトウエアです。</li>
+<li>日本語の表示に東雲フォント（/efont/）も使っています。東雲フォントはパブリックドメインで提供されているフォントです。</li>
 <li>このパッチの使用は自己責任でお願いします。</li>
 </ul>
 </div>

@@ -43,7 +43,7 @@
 <p class="tag">GOG.com 版と Steam 版の「Ultima IV: Quest of the Avatar」（DOS 版）を日本語で遊べるようにする、非公式のファンメイドパッチです。
 ジプシーの問いかけによるキャラクター作成から、町の人々との会話、ロード・ブリティッシュやホークウィンドの言葉、店でのやりとり、戦闘、ダンジョン、祠での瞑想、エンディングまで、ゲームの中の文章を日本語にしています。
 ゲームのフォルダにファイルを置くだけで日本語になり、外せば英語に戻ります。</p>
-<p><a class="dl" href="https://github.com/higesho/ultima-ja/releases/tag/ultima4-v1.1">ダウンロード（GitHub）</a></p>
+<p><a class="dl" href="https://github.com/higesho/ultima-ja/releases/tag/ultima4-v1.2">ダウンロード（GitHub）</a></p>
 </section>
 
 <div class="text">
@@ -74,7 +74,7 @@ GOG.com と Steam で販売されているのは DOS 版です。</p>
 <h2>入れ方</h2>
 <ol>
 <li>ダウンロードした <code>Ultima4_JP.zip</code> を展開します。</li>
-<li>中のファイル（<code>U4JP.COM</code>、<code>U4JP.DAT</code>、町ごとの <code>.TLJ</code> 16 個、<code>dosboxULTIMA4_single.conf</code>）を、すべてゲームのフォルダ（<code>ULTIMA.COM</code> があるフォルダ）にコピーします。<code>dosboxULTIMA4_single.conf</code> は上書きしてください。</li>
+<li>中のファイル（<code>U4JP.COM</code>、<code>U4JP.DAT</code>、町ごとの <code>.TLJ</code> 16 個、<code>dosboxULTIMA4_single.conf</code>）を、すべてゲームのフォルダ（<code>ULTIMA.COM</code> があるフォルダ）にコピーします。<code>dosboxULTIMA4_single.conf</code> は上書きしてください。<code>DOSBOX</code> フォルダも、ゲームのフォルダの中の <code>DOSBOX</code> フォルダにコピーします（<code>opengl32.dll</code> と <code>ultima_ja.ini</code> が増えます）。</li>
 <li>いつもどおり GOG Galaxy や Steam、ショートカットから起動します。</li>
 </ol>
 <p>Steam 版でも同じ手順で使えます。Steam のライブラリで「ローカルファイルを閲覧」を選ぶと開くフォルダにコピーしてください。</p>
@@ -84,6 +84,7 @@ GOG.com と Steam で販売されているのは DOS 版です。</p>
 <ul>
 <li><code>U4JP.COM</code>、<code>U4JP.DAT</code>、16 個の <code>.TLJ</code> を消し、GOG Galaxy の「ファイルの検証/修復」で <code>dosboxULTIMA4_single.conf</code> を元に戻します。</li>
 <li>Steam 版では、Steam の「ゲームファイルの整合性を確認」で <code>dosboxULTIMA4_single.conf</code> を元に戻します。</li>
+<li><code>DOSBOX</code> フォルダに増えた <code>opengl32.dll</code> と <code>ultima_ja.ini</code> も消します。</li>
 </ul>
 <p>セーブデータは英語版と共通です。日本語版と英語版を行き来しても、続きから遊べます。</p>
 
@@ -113,6 +114,15 @@ GOG.com と Steam で販売されているのは DOS 版です。</p>
 <li>Upgrade v1.3 には、エンディングの途中で止まる不具合が知られています。直した <code>ULTIMA.COM</code> が <a href="https://exodus.voyd.net/2018/05/27/u4-upgrade-endgame-bug/">The Exodus Project</a> で配られています（英語）。</li>
 </ul>
 
+<h2>窓と字の形</h2>
+<ul>
+<li>ゲームは窓で起動します。窓のふちをドラッグすると、大きさを自由に変えられます。最大化もでき、変えた大きさは次の起動でも使われます。Alt＋Enter で全画面に切り替えられます。</li>
+<li>日本語の字の形は、東雲フォント（12ドット）と美咲フォント（8ドット）から選べます。最初は東雲フォントで、ゲーム中に F11 キーを押すと切り替わります。</li>
+<li>設定は <code>DOSBOX</code> フォルダの <code>ultima_ja.ini</code> で変えられます。</li>
+<li>Steam 版では、窓の表示と東雲フォントの動きを確かめていません。</li>
+<li>Ultima IV Upgrade などのために <code>dosboxULTIMA4_single.conf</code> を上書きしなかった場合は、窓の表示と東雲フォントは使われません（日本語化はそのまま動きます）。</li>
+</ul>
+
 <h2>遊ぶときの注意</h2>
 <ul>
 <li>コマンドは原作どおり英字のキーで操作します（A＝攻撃、E＝入る、T＝話す など）。キーの一覧はゲームに付いているマニュアルをご覧ください。</li>
@@ -129,6 +139,7 @@ GOG.com と Steam で販売されているのは DOS 版です。</p>
 <h2>クレジット</h2>
 <ul>
 <li>日本語の表示に美咲フォント（Copyright &copy; 2002-2021 Num Kadoma）を使っています。美咲フォントは、自由に利用・複製・再配布できるフリーソフトウエアです。</li>
+<li>日本語の表示に東雲フォント（/efont/）も使っています。東雲フォントはパブリックドメインで提供されているフォントです。</li>
 <li>ジプシーのカードの徳の名前は、BIZ UD明朝（Copyright &copy; Morisawa Inc.、SIL Open Font License 1.1）をもとに描いています。</li>
 <li>このパッチの使用は自己責任でお願いします。</li>
 </ul>
