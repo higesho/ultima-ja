@@ -94,3 +94,11 @@ footer.foot p { margin: 4px 0; }
   .hero h1 { font-size: 1.5rem; }
   .shots { grid-template-columns: 1fr; }
 }
+
+/* メニュー: 同じシリーズのリンクを左、GitHub、ほかのシリーズ（higesho.github.io の別サイト）を右に並べ、
+   ほかのシリーズは区切り線・金色・「↗」で見分ける */
+header.top nav a[href^="https://github.com/"] { order: 1; }
+header.top nav a[href^="https://higesho.github.io/"] { order: 2; color: var(--gold); opacity: 0.85; }
+header.top nav a[href^="https://higesho.github.io/"]::before { content: "↗ "; }
+header.top nav a[href^="https://higesho.github.io/"]:hover { color: #fff; opacity: 1; }
+header.top nav a:not([href^="https://higesho.github.io/"]) + a[href^="https://higesho.github.io/"] { margin-left: 4px; padding-left: 16px; border-left: 1px solid var(--line); }
