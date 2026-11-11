@@ -43,8 +43,8 @@
 <h1>ウルティマVIII 日本語化パッチ</h1>
 <p class="tag">GOG.com 版の「Ultima 8 Gold Edition」（DOS 版）を日本語で遊べるようにする、非公式のファンメイドパッチです。
 オープニングのガーディアンの語りから、ペイガンの人々との会話、店でのやりとり、本や巻物、墓碑や銘板、物の名前、ゲームのメニューまで、ゲームの中の文章を日本語にしています。
-ゲームは、日本語の表示に対応させた ScummVM（同梱）で動かします。英語版のファイルはそのままで、日本語版は別のフォルダに作られます。</p>
-<p><a class="dl" href="https://github.com/higesho/ultima-ja/releases/tag/ultima8-v1.0">ダウンロード（GitHub）</a></p>
+ゲームは、日本語の表示に対応させた ScummVM（同梱）で動かします。ゲームのファイルは書き換えず、写しも作りません。</p>
+<p><a class="dl" href="https://github.com/higesho/ultima-ja/releases/tag/ultima8-v1.1">ダウンロード（GitHub）</a></p>
 </section>
 
 <div class="text">
@@ -74,17 +74,17 @@
 <ol>
 <li>ダウンロードした <code>Ultima8_JP.zip</code> を展開します。</li>
 <li>出てきた <code>ウルティマ8日本語化パッチ</code> フォルダの中身を、すべてゲームのフォルダ（<code>ENGLISH</code>・<code>FRENCH</code>・<code>GERMAN</code> のフォルダがあるフォルダ）にコピーします。</li>
-<li><code>U8JP.exe</code> をダブルクリックします。<code>ENGLISH</code> フォルダが写されて <code>JAPANESE</code> フォルダができ、その中が日本語になります（1 分ほどかかります）。
-初めて実行するとき、Windows の警告（「Windows によって PC が保護されました」）が出ることがあります。そのときは「詳細情報」を押してから「実行」を押してください。</li>
 <li><code>ウルティマ8日本語版.bat</code> をダブルクリックすると、日本語版が始まります。よく遊ぶなら、ショートカットをデスクトップに作っておくと便利です。</li>
 </ol>
 <p>GOG.com の「Ultima 8 Gold Edition」で使えます。
-<code>ENGLISH</code> フォルダの中は書き換えないので、英語版・フランス語版・ドイツ語版も、これまでどおり遊べます。
-GOG.com 版の英語版のファイルに合わせて作っているので、ほかの版や、ファイルを書き換えたものには使えません（<code>U8JP.exe</code> が知らせて止まります）。</p>
+起動するたびに <code>ENGLISH</code> フォルダの英語版のファイルを読んで日本語版を組み立てるので、英語版・フランス語版・ドイツ語版も、これまでどおり遊べます。
+GOG.com 版の英語版のファイルに合わせて作っているので、ほかの版や、ファイルを書き換えたものには使えません（起動したときに知らせて止まります）。</p>
+<p>v1.0 から入れ替えるときは、新しい配布物の中身を同じようにコピーして上書きし、<code>U8JP.exe</code> を消してください。
+<code>JAPANESE</code> フォルダは、セーブデータの入った <code>SCUMMVM_SAVES</code> フォルダだけを残して、ほかは消してかまいません。</p>
 
 <h2>外し方</h2>
 <ul>
-<li>コピーしたファイル（<code>U8JP.exe</code>、<code>ウルティマ8日本語版.bat</code>、<code>はじめにお読みください.txt</code>、<code>ScummVM-U8JP</code> フォルダ、<code>フォントのライセンス</code> フォルダ）と、<code>JAPANESE</code> フォルダを消します。</li>
+<li>コピーしたファイル（<code>ウルティマ8日本語版.bat</code>、<code>はじめにお読みください.txt</code>、<code>ScummVM-U8JP</code> フォルダ、<code>フォントのライセンス</code> フォルダ）と、<code>JAPANESE</code> フォルダを消します。</li>
 <li>セーブデータ（<code>JAPANESE\SCUMMVM_SAVES</code>）も一緒に消えるので、残したいときは先に別の場所へ写してください。</li>
 </ul>
 
@@ -104,7 +104,7 @@ GOG.com 版の英語版のファイルに合わせて作っているので、ほ
 
 <h2>クレジット</h2>
 <ul>
-<li>ゲームは ScummVM（<a href="https://www.scummvm.org/">https://www.scummvm.org/</a>）で動かします。同梱の ScummVM は、ScummVM 2026.4.0 に、このパッチで作った日本語版を認識させる変更を加えた非公式ビルドです。公式の ScummVM ではないので、この非公式ビルドについて ScummVM の開発チームに問い合わせないでください。ScummVM は GNU General Public License で配布されています。この非公式ビルドのソースは <a href="https://github.com/higesho/scummvm/tree/ja">https://github.com/higesho/scummvm</a> の ja ブランチで公開しています。</li>
+<li>ゲームは ScummVM（<a href="https://www.scummvm.org/">https://www.scummvm.org/</a>）で動かします。同梱の ScummVM は、ScummVM 2026.4.0 に、英語版のファイルから日本語版を組み立てて認識させる変更を加えた非公式ビルドです。公式の ScummVM ではないので、この非公式ビルドについて ScummVM の開発チームに問い合わせないでください。ScummVM は GNU General Public License で配布されています。この非公式ビルドのソースは <a href="https://github.com/higesho/scummvm/tree/ja">https://github.com/higesho/scummvm</a> の ja ブランチで公開しています。</li>
 <li>日本語の表示に、PixelMplus（<a href="https://github.com/itouhiro/PixelMplus">itouhiro</a>、M+ FONTS PROJECT）を使っています。M+ FONT LICENSE により、自由に利用・複製・再配布できます。</li>
 <li>SDL を使っています。使用許諾は配布物の <code>ScummVM-U8JP</code> フォルダと <code>フォントのライセンス</code> フォルダにあります。</li>
 <li>このパッチの使用は自己責任でお願いします。</li>
