@@ -45,6 +45,7 @@
 タイトルやキャラクター作成から、地上・町・城・ダンジョンの冒険、店でのやりとり、戦闘、町の人々の会話、エンディングまで、ゲームの中の文章を日本語にしています。
 ゲームのフォルダにファイルを置くだけで日本語になり、外せば英語に戻ります。</p>
 <p><a class="dl" href="https://github.com/higesho/ultima-ja/releases/tag/ultima3-v1.1">ダウンロード（GitHub）</a></p>
+<p>GOG 版や Steam 版のゲームを読み込んで遊ぶ、新しい移植版の Windows アプリ（日本語対応）もあります。<a href="#app">下の「新しい移植版（Windows アプリ）」</a>をご覧ください。</p>
 </section>
 
 <div class="text">
@@ -104,6 +105,38 @@ GOG.com で販売されているのは DOS 版です。</p>
 <li>GOG Galaxy がゲームを更新・修復すると、<code>dosboxULTIMA3_single.conf</code> が元に戻ることがあります。そのときはもう一度上書きしてください。</li>
 </ul>
 
+<h2 id="app">新しい移植版（Windows アプリ）</h2>
+<p>LairWare の Macintosh 版をもとに作り直された移植版（synthwave-pixel 作、MIT ライセンス）を、日本語でも遊べるようにした Windows 用のアプリです。
+お持ちの GOG 版か Steam 版の「Ultima 3」のファイルを読み込んで遊びます（アプリにはゲームのデータは入っていません）。地図の自動記録や冒険の記録、コントローラーでの操作など、現代向けの機能があります。原作どおりの遊び方や、DOS 版の見た目に切り替えることもできます。</p>
+<div class="shots">
+  <figure><img src="img/app-title.png" alt="移植版のタイトル画面（日本語）" loading="lazy"><figcaption>今風の見た目</figcaption></figure>
+  <figure><img src="img/app-cga.png" alt="DOS 版の見た目で地上を旅する画面" loading="lazy"><figcaption>DOS 版の見た目</figcaption></figure>
+</div>
+<p><a class="dl" href="https://github.com/higesho/ultima3/releases/latest">ダウンロード（GitHub）</a></p>
+<h3>入れ方</h3>
+<ol>
+<li>ダウンロードした <code>Ultima3_App_JP.zip</code> を展開します。</li>
+<li>中のファイル（<code>Ultima3JP.exe</code>、<code>LICENSE.txt</code>、<code>はじめにお読みください.txt</code>）を、ゲームのフォルダ（<code>EXODUS.BIN</code> があるフォルダ）にコピーします。Steam 版は、Steam のライブラリで「ローカルファイルを閲覧」を選ぶと開くフォルダです。</li>
+<li><code>Ultima3JP.exe</code> を起動します。「Windows によって PC が保護されました」と出たら、「詳細情報」を押してから「実行」を押します（署名のないアプリのため出る表示です）。</li>
+</ol>
+<p>ゲームのファイルは書き換えません。GOG Galaxy や Steam から起動する DOS 版は、これまでどおり遊べます。</p>
+<p><code>Ultima3JP.exe</code> をほかの場所に置いた場合も、GOG Galaxy や Steam で入れたゲームなら自動で見つけます。見つからないときは「ゲームのフォルダを選ぶ」と出るので、<code>EXODUS.BIN</code> があるフォルダを選んでください。</p>
+<h3>外し方</h3>
+<ul>
+<li><code>Ultima3JP.exe</code>、<code>LICENSE.txt</code>、<code>はじめにお読みください.txt</code> と、横にできる「Ultima III Data」フォルダ（セーブと設定）を消します。</li>
+</ul>
+<h3>遊び方</h3>
+<ul>
+<li>Windows が日本語なら、最初から日本語で始まります。英語で始まったときは、タイトルの「Settings」で「Language/言語」を選ぶと日本語に切り替わります。</li>
+<li>見た目は、設定の「絵柄」で今風の絵柄（Standard）と DOS 版の絵柄（PC CGA）を切り替えられます。日本語は Standard では東雲フォント（16ドット）で、PC CGA では美咲フォント（8ドット）で表示します。</li>
+<li>町の人の言葉や店の文などは、DOS 版の文を日本語にして表示します。</li>
+<li>音楽はありません。効果音は鳴ります。</li>
+<li>F11 か Alt＋Enter で全画面と窓を切り替えます。Esc でポーズ メニューが開き、設定・手引き・ヘルプが見られます。</li>
+<li>ゲームは町・城・ダンジョンの入口で自動でセーブされます（DOS 版のセーブとは別です）。タイトルの「ゲームを 書き出す／読みこむ」で、セーブをファイルに写せます。</li>
+<li>新しい版が出ると、タイトルのメニューに「更新」が出ます。</li>
+<li>合言葉（SEARCH、PRAY など）は、原作どおり英字で入力します。</li>
+</ul>
+
 <h2>ご意見・誤訳の報告</h2>
 <p>誤訳や不自然な訳に気づいたら、<a href="https://github.com/higesho/ultima-ja/issues">GitHub の Issues</a> で教えてください。</p>
 
@@ -111,7 +144,8 @@ GOG.com で販売されているのは DOS 版です。</p>
 <ul>
 <li>日本語の表示に美咲フォント（Copyright &copy; 2002-2021 Num Kadoma）を使っています。美咲フォントは、自由に利用・複製・再配布できるフリーソフトウエアです。</li>
 <li>日本語の表示に東雲フォント（/efont/）も使っています。東雲フォントはパブリックドメインで提供されているフォントです。</li>
-<li>このパッチの使用は自己責任でお願いします。</li>
+<li>新しい移植版は synthwave-pixel による移植（<a href="https://github.com/synthwave-pixel/ultima3">synthwave-pixel/ultima3</a>、MIT ライセンス）と、Leon McNeill（LairWare）による Macintosh 版をもとにしています。</li>
+<li>このパッチとアプリの使用は自己責任でお願いします。</li>
 </ul>
 </div>
 </main>
