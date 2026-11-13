@@ -45,6 +45,7 @@
 ジプシーの問いかけによるキャラクター作成から、町の人々との会話、店や酒場でのやりとり、看板、「調べる」の説明、戦闘、ダンジョン、エンディングまで、ゲームの中の文章を日本語にしています。
 ゲームのフォルダにファイルを置くだけで日本語になり、外せば英語に戻ります。</p>
 <p><a class="dl" href="https://github.com/higesho/ultima-ja/releases/tag/ultima5-v1.1">ダウンロード（GitHub）</a></p>
+<p>GOG 版や Steam 版のゲームのファイルを使って、新しい移植版の Windows アプリでも日本語で遊べます。<a href="#app">下の「新しい移植版（Windows アプリ）」</a>をご覧ください。</p>
 </section>
 
 <div class="text">
@@ -108,6 +109,35 @@ GOG.com と Steam で販売されているのは DOS 版です。</p>
 <li>GOG Galaxy や Steam がゲームを更新・修復すると、<code>dosboxULTIMA5_single.conf</code> が元に戻ることがあります。そのときはもう一度上書きしてください。</li>
 </ul>
 
+<h2 id="app">新しい移植版（Windows アプリ）</h2>
+<p>synthwave-pixel が作った新しいエンジン（MIT ライセンス）を、日本語でも遊べるようにした Windows 用のアプリです。
+GOG 版や Steam 版のゲームのファイルを読み込んで遊びます（アプリにゲームは入っていません）。
+コントローラーでの操作、聞いた言葉を選んで話せる会話、冒険の記録（日誌）、地図など、現代向けの機能があります。1988 年の見た目に切り替えることもできます。</p>
+<div class="shots">
+  <figure><img src="img/app-title.png" alt="移植版のタイトル画面（日本語）" loading="lazy"><figcaption>タイトル</figcaption></figure>
+  <figure><img src="img/app-talk.png" alt="移植版で町の人と話す画面" loading="lazy"><figcaption>人々との会話</figcaption></figure>
+  <figure><img src="img/app-story.png" alt="移植版の物語の導入の画面" loading="lazy"><figcaption>物語の導入</figcaption></figure>
+</div>
+<p><a class="dl" href="https://github.com/higesho/ultima5/releases/tag/v1.0.0">ダウンロード（GitHub）</a></p>
+<ul>
+<li><code>Ultima-V-JA-1.0.0-win-x64-setup.exe</code>: インストーラー版。実行すると入れる場所を選べます。新しい版が出ると、自動で更新されます。</li>
+<li><code>Ultima-V-JA-1.0.0-win-x64-portable.exe</code>: 持ち運び版。入れずに、そのまま実行して遊べます。</li>
+</ul>
+<h3>入れ方と遊び方</h3>
+<ol>
+<li>どちらかの exe をダウンロードして実行します。</li>
+<li>「Windows によって PC が保護されました」と出たら、「詳細情報」を押してから「実行」を押します（署名のないアプリのため出る表示です）。</li>
+<li>最初に、ゲームのファイルの場所をたずねられます。GOG 版を決まった場所に入れていれば、「ゲームのファイルを検索…」で見つかります。Steam 版や、別の場所に入れたときは「フォルダを選ぶ…」で、<code>ULTIMA.EXE</code> があるフォルダを選びます（Steam 版は、Steam のライブラリで「ローカルファイルを閲覧」を選ぶと開くフォルダです）。ファイルはアプリの中に写され、ゲームのフォルダは書き換えません。</li>
+</ol>
+<ul>
+<li>今風の見た目では日本語を東雲フォント（16ドット）で、1988 年の見た目では美咲フォント（8ドット）で表示します。見た目はタイトルの「設定」で切り替えます。</li>
+<li>F11 か Alt＋Enter で全画面と窓を切り替えます。Esc で一時停止のメニューが開き、設定・遊び方・ヘルプ・豆知識が見られます。</li>
+<li>町の人との会話は、聞いた言葉の一覧から選んで話します。「星(STAR)」のように、日本語の後に会話の言葉が添えてあります。設定の「遊び方」で入力を「原作」にすると、原作どおり言葉を打って話せます。</li>
+<li>ゲームは町・城・ダンジョンに出入りするときに自動でセーブされます。タイトルの「セーブの管理」で、セーブをファイルに書き出したり取り込んだりできます。セーブは DOS 版とは別です。</li>
+<li>タイトルの「設定」の「言語」で、英語に切り替えられます。</li>
+<li>新しい版が出ると、タイトルのメニューに「更新」が出ます。</li>
+</ul>
+
 <h2>ご意見・誤訳の報告</h2>
 <p>誤訳や不自然な訳に気づいたら、<a href="https://github.com/higesho/ultima-ja/issues">GitHub の Issues</a> で教えてください。</p>
 
@@ -115,7 +145,8 @@ GOG.com と Steam で販売されているのは DOS 版です。</p>
 <ul>
 <li>日本語の表示に美咲フォント（Copyright &copy; 2002-2021 Num Kadoma）を使っています。美咲フォントは、自由に利用・複製・再配布できるフリーソフトウエアです。</li>
 <li>日本語の表示に東雲フォント（/efont/）も使っています。東雲フォントはパブリックドメインで提供されているフォントです。</li>
-<li>このパッチの使用は自己責任でお願いします。</li>
+<li>新しい移植版は synthwave-pixel による新しいエンジン（<a href="https://github.com/synthwave-pixel/ultima5">synthwave-pixel/ultima5</a>、MIT ライセンス）をもとにしています。日本語版のソースは <a href="https://github.com/higesho/ultima5/tree/ja">higesho/ultima5 の ja ブランチ</a>にあります。</li>
+<li>このパッチとアプリの使用は自己責任でお願いします。</li>
 </ul>
 </div>
 </main>
