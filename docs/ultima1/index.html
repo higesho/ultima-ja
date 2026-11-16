@@ -23,7 +23,7 @@
 <p class="tag">GOG.com 版の「Ultima 1」（DOS 版）を日本語で遊べるようにする、非公式のファンメイドパッチです。
 オープニングからエンディングまで、ゲームの中の文章をすべて日本語にしています。
 ゲームのフォルダにファイルを置くだけで日本語になり、外せば英語に戻ります。</p>
-<p><a class="dl" href="https://github.com/higesho/ultima-ja/releases/tag/ultima1-v1.2">ダウンロード（GitHub）</a></p>
+<p><a class="dl" href="https://github.com/higesho/ultima-ja/releases/tag/ultima1-v1.3">ダウンロード（GitHub）</a></p>
 </section>
 
 <div class="text">
@@ -69,6 +69,31 @@ GOG.com で販売されているのは、のちに作り直された DOS 版（E
 <li>ゲームは窓で起動します。窓のふちをドラッグすると、大きさを自由に変えられます。最大化もでき、変えた大きさは次の起動でも使われます。Alt＋Enter で全画面に切り替えられます。</li>
 <li>日本語の字の形は、東雲フォント（12ドット）と美咲フォント（8ドット）から選べます。最初は東雲フォントで、ゲーム中に F11 キーを押すと切り替わります。</li>
 <li>設定は <code>DOSBOX</code> フォルダの <code>ultima_ja.ini</code> で変えられます。</li>
+</ul>
+
+<h2>自動地図「Where Are We?」といっしょに使う</h2>
+<p>「<a href="https://www.eskimo.com/~edv/lockscroll/WhereAreWe/">Where Are We?</a>」は、DOSBox で動いているゲームを読み取って、地図や今いる場所を表示する Windows 用のツールです（英語）。
+この日本語化パッチを入れたままでも使えます。ソサリアの地図にパーティーの位置が出て、能力や持ち物なども Where Are We? の窓に表示されます。</p>
+<figure class="waw"><img src="img/waw.png" alt="Where Are We? の地図の画面" loading="lazy"><figcaption>Where Are We? の画面（ソサリアの地上。真ん中の ◇ がパーティーの位置です）</figcaption></figure>
+
+<h3>使い方</h3>
+<ol>
+<li><a href="https://www.eskimo.com/~edv/lockscroll/WhereAreWe/">Where Are We? のページ</a>から zip をダウンロードして展開し、中の <code>WhereAreWe</code> の exe を起動します。動かすには .NET Framework 4.5 以上が要ります（Windows 10・11 には入っています）。</li>
+<li>最初の起動では、設定の案内（Welcome to "Where Are We"）が出ます。ゲームの場所は自動で見つかります。
+「Change the DOSBox settings for the above games to be windowed instead of fullscreen」のチェックは外してから、Next と Finish で閉じます。
+「Non-administrator mode detected」と出たら「はい」で続けます。</li>
+<li>メニューの View → Options を開き、DOSBox タブの「DOSBox memory quick-scan only (check only known memory offsets)」のチェックを外して、OK を押します。</li>
+<li>いつもどおりゲームを起動して、冒険を始めます。Where Are We? がゲームを見つけると、地図にパーティーの位置が出ます。
+ほかのゲームの地図が開いていると「Different game running」と聞かれるので、「はい」を押してこのゲームの地図に切り替えます。</li>
+</ol>
+
+<h3>注意</h3>
+<ul>
+<li>v1.3 の <code>dosboxULTIMA1_single.conf</code> で起動してください。この起動設定には、Where Are We? がゲームを正しく読めるようにするための行（<code>set U1JP=…</code>）が入っています。前の版の起動設定や、GOG の元の起動設定では読めません。</li>
+<li>GOG 版で確かめています。ゲームの音の設定などを変えると、読めなくなることがあります。</li>
+<li>ウルティマI の DOSBox は、1 つだけ起動してください。2 つ以上起動していると、Where Are We? が別の方を読もうとすることがあります。</li>
+<li>Where Are We? の画面（地図の説明や、怪物・品物の名前など）は英語のままです。</li>
+<li>Where Are We? は、この日本語化パッチとは別に作られているツールです。詳しい使い方は <a href="https://www.eskimo.com/~edv/lockscroll/WhereAreWe/">Where Are We? のページ</a>をご覧ください。</li>
 </ul>
 
 <h2>遊ぶときの注意</h2>

@@ -73,6 +73,9 @@ code { background: #1e1e3a; padding: 1px 6px; border-radius: 3px; font-size: 0.9
 .shots figure { margin: 0; background: #000; border: 1px solid var(--line); }
 .shots img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: fill; image-rendering: pixelated; }
 .shots figcaption { padding: 6px 10px; font-size: 0.88rem; color: var(--muted); }
+.waw { margin: 16px 0; max-width: 600px; background: #000; border: 1px solid var(--line); }
+.waw img { display: block; width: 100%; height: auto; }
+.waw figcaption { padding: 6px 10px; font-size: 0.88rem; color: var(--muted); background: var(--bg); }
 
 /* 文章 */
 .text { max-width: 50em; }
