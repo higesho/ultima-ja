@@ -26,8 +26,8 @@ GOG.com で販売されている版を対象に、I から VIII までを順に�
 | ウルティマIX（Ultima IX: Ascension） | 公式日本語版の入れ方を案内 | [紹介ページ](https://higesho.github.io/ultima-ja/ultima9/) |
 | 外伝 マーシャン・ドリームズ（Worlds of Ultima: Martian Dreams） | 公開中 | [MartianDreams_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/martian-v1.1) |
 | 外伝 サベージ・エンパイア（Worlds of Ultima: The Savage Empire） | 公開中 | [SavageEmpire_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/savage-v1.1) |
-| 外伝 ウルティマ アンダーワールド（Ultima Underworld: The Stygian Abyss） | 公開中 | [UltimaUnderworld_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/underworld-v1.0) |
-| 外伝 ウルティマ アンダーワールドII（Ultima Underworld II: Labyrinth of Worlds） | 準備中 | — |
+| 外伝 ウルティマ アンダーワールド（Ultima Underworld: The Stygian Abyss） | 公開中 | [UltimaUnderworld_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/underworld-v1.1) |
+| 外伝 ウルティマ アンダーワールドII（Ultima Underworld II: Labyrinth of Worlds） | 公開中 | [UltimaUnderworld2_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/underworld2-v1.0) |
 
 入れ方と外し方は、サイトの各作品のページをご覧ください。
 どのパッチも、ゲームのファイルを書き換えません。配布物には原作のプログラムやデータは入っていません。
