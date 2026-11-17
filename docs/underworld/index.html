@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ウルティマ アンダーワールド 日本語版 — ウルティマ シリーズ 日本語化プロジェクト</title>
-<meta name="description" content="GOG.com 版 ウルティマ アンダーワールド（Ultima Underworld: The Stygian Abyss）を、再実装版 Underworld Revisited で日本語で遊べるようにする、非公式のファンメイド日本語版。">
+<title>ウルティマ アンダーワールド 日本語化パッチ — ウルティマ シリーズ 日本語化プロジェクト</title>
+<meta name="description" content="GOG.com 版 ウルティマ アンダーワールド（Ultima Underworld: The Stygian Abyss、DOS 版）を日本語で遊べるようにする、非公式のファンメイドパッチ。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ウルティマ アンダーワールド 日本語版">
-<meta property="og:description" content="GOG.com 版 ウルティマ アンダーワールド（Ultima Underworld: The Stygian Abyss）を、再実装版 Underworld Revisited で日本語で遊べるようにする、非公式のファンメイド日本語版。">
+<meta property="og:title" content="ウルティマ アンダーワールド 日本語化パッチ">
+<meta property="og:description" content="GOG.com 版 ウルティマ アンダーワールド（Ultima Underworld: The Stygian Abyss、DOS 版）を日本語で遊べるようにする、非公式のファンメイドパッチ。">
 <meta property="og:url" content="https://higesho.github.io/ultima-ja/underworld/">
 <meta property="og:image" content="https://higesho.github.io/ultima-ja/underworld/img/talk.jpg">
 <link rel="stylesheet" href="../style.css">
@@ -19,11 +19,12 @@
 <main class="band">
 <section class="hero">
 <p class="sub">Ultima Underworld: The Stygian Abyss</p>
-<h1>ウルティマ アンダーワールド 日本語版</h1>
-<p class="tag">GOG.com 版の「Ultima Underworld 1+2」の第1作を日本語で遊べるようにする、非公式のファンメイド日本語版です。
-地下の人々との会話、本や巻物、物の名前、画面に出るメッセージ、メニューやヘルプまで、ゲームの中の文章を日本語にしています。
-ゲームは、原作を Unity で作り直したオープンソースの再実装版「Underworld Revisited」に日本語の表示を加えたもの（同梱）で動かします。ゲームのファイルは書き換えません。</p>
-<p><a class="dl" href="https://github.com/higesho/UnderworldRevisited/releases/tag/ja-preview-20261013">ダウンロード（GitHub）</a></p>
+<h1>ウルティマ アンダーワールド 日本語化パッチ</h1>
+<p class="tag">GOG.com 版の「Ultima Underworld 1+2」の第1作（DOS 版）を日本語で遊べるようにする、非公式のファンメイドパッチです。
+キャラクター作成、深淵の住人との会話、物の名前、巻物に出るメッセージ、本や巻物、オープニングの字幕まで、ゲームの中の文章を日本語にしています。
+ゲームのファイルは書き換えません。</p>
+<p><a class="dl" href="https://github.com/higesho/ultima-ja/releases/tag/underworld-v1.0">ダウンロード（GitHub）</a>
+<a class="dl sub" href="#ur">Underworld Revisited で遊ぶ</a></p>
 </section>
 
 <div class="text">
@@ -40,55 +41,82 @@
 <h2>画面</h2>
 <div class="shots">
   <figure><img src="img/talk.jpg" alt="深淵の住人ブラギットとの会話の画面" loading="lazy"><figcaption>深淵の住人との会話</figcaption></figure>
-  <figure><img src="img/dungeon.jpg" alt="地下迷宮の通路を歩く画面" loading="lazy"><figcaption>地下迷宮</figcaption></figure>
-  <figure><img src="img/create.jpg" alt="キャラクターの能力値と技能が並ぶ画面" loading="lazy"><figcaption>キャラクターの作成</figcaption></figure>
+  <figure><img src="img/look.jpg" alt="壁や床を調べた結果が巻物に出る画面" loading="lazy"><figcaption>調べる</figcaption></figure>
+  <figure><img src="img/opening.jpg" alt="オープニングの字幕の画面" loading="lazy"><figcaption>オープニング</figcaption></figure>
+  <figure><img src="img/create.jpg" alt="キャラクター作成で職業を選ぶ画面" loading="lazy"><figcaption>キャラクターの作成</figcaption></figure>
 </div>
 
 <div class="text">
-<h2>必要なもの</h2>
-<ul>
-<li>Windows 10 以降の 64 ビット版と、DirectX 11 に対応したグラフィックカード。</li>
-<li>GOG.com で販売されている「Ultima Underworld 1+2」をインストールしたもの。ほかの版には対応していません。</li>
-</ul>
-<p>日本語の表示には、パソコンに入っているフォント（Noto Sans JP、游ゴシック、メイリオなど）を使います。Windows に最初から入っているフォントで表示できます。</p>
-
 <h2>入れ方</h2>
 <ol>
-<li>ダウンロードした <code>UnderworldRevisited-ja-preview-20261013-win64.zip</code> を、好きな場所に展開します。</li>
-<li>出てきたフォルダの中の <code>UR.exe</code> をダブルクリックします。
-初めて実行するとき、Windows の警告（「Windows によって PC が保護されました」）が出ることがあります。そのときは「詳細情報」を押してから「実行」を押してください。</li>
-<li>ゲームのフォルダが見つからないときは、フォルダを選ぶ画面が出ます。<code>game.gog</code> があるフォルダ（GOG.com 版をインストールしたフォルダ）を選びます。選んだフォルダは次から覚えています。</li>
-<li>メインメニューが出たら、そのまま日本語で遊べます。</li>
+<li>ダウンロードした <code>UltimaUnderworld_JP.zip</code> を展開します。</li>
+<li>出てきた <code>ウルティマアンダーワールド日本語化パッチ</code> フォルダの中の <code>UWJP.COM</code>・<code>UWJP.DAT</code>・<code>dosboxULTIMA1_single.conf</code> を、ゲームのフォルダ（<code>game.gog</code> がある所）にコピーします。<code>dosboxULTIMA1_single.conf</code> は上書きしてください。</li>
+<li><code>DOSBOX</code> フォルダも、ゲームのフォルダの中の <code>DOSBOX</code> フォルダにコピーします（<code>opengl32.dll</code> と <code>ultima_ja.ini</code> が増えます）。</li>
+<li>いつもどおり GOG Galaxy やショートカットから起動し、最初の画面（Ultima Underworld Launcher）で 1 を押します。</li>
 </ol>
-<p>最初の起動のときに、ゲームのデータを <code>game.gog</code> から読み出すので、少し時間がかかります。GOG.com 版のファイルはそのままなので、DOS 版もこれまでどおり遊べます。</p>
+<p>GOG.com の「Ultima Underworld 1+2」の第1作で使えます。ゲームのファイルは書き換えないので、外せば英語版に戻ります。</p>
 
 <h2>外し方</h2>
 <ul>
-<li>展開したフォルダを消します。</li>
-<li>設定と、読み出したゲームのデータは <code>%USERPROFILE%\AppData\LocalLow\Underworld Revisited</code> にあります。すっかり消したいときは、このフォルダも消してください。</li>
-<li>セーブデータはゲームのフォルダの中（DOS 版と同じ場所）にあるので、消えずに残ります。</li>
+<li>ゲームのフォルダの <code>UWJP.COM</code> と <code>UWJP.DAT</code> を消し、GOG Galaxy の「ファイルの検証/修復」で <code>dosboxULTIMA1_single.conf</code> を元に戻します。</li>
+<li><code>DOSBOX</code> フォルダに増えた <code>opengl32.dll</code> と <code>ultima_ja.ini</code> も消します。</li>
+<li>セーブデータは英語版と共通です。日本語版と英語版を行き来して遊べます。</li>
+</ul>
+
+<h2>字の形</h2>
+<ul>
+<li>日本語の字は東雲フォント（12 ドット）で表示します。<code>DOSBOX</code> フォルダの <code>ultima_ja.ini</code> の <code>font=</code> を <code>misaki</code> に書き換えると、美咲フォント（8 ドット）になります。</li>
+<li>東雲フォントで描き直すのは、無地の背景に 1 色で書かれた字です。模様の上の字や、オープニングの大きな字幕は、美咲フォントの形のまま表示します。</li>
+<li>起動設定で、画面をくっきり広げる表示（<code>glshader=sharp</code>）にしています。</li>
 </ul>
 
 <h2>遊ぶときの注意</h2>
 <ul>
-<li>セーブデータは DOS 版と同じ形で、同じ場所に保存されます。DOS 版と行き来して遊べます。</li>
-<li>操作は、はじめは原作と同じです（マウスで動き、F1〜F10 キーなどが原作どおりに使えます）。Shift＋F2 キーで、WASD キーとマウスで動く現代式の操作に切り替えられます。</li>
-<li>Tab キーでヘルプが開きます。キーの一覧は、展開したフォルダの <code>Docs\CONTROLS.md</code>（英語）にもあります。</li>
-<li>設定は、メインメニューやゲームのメニューの上に並ぶ「ゲーム」「画質」「操作」「音声」などから変えられます。</li>
+<li>操作は英語版と同じです。キーの一覧はゲーム付属のマニュアルをご覧ください。</li>
 <li>キャラクターの名前は英字で入力します。</li>
 <li>会話で言葉を入力する場面、合言葉、ルーンの名前、マントラは、謎解きのために英語のままです。リザードマンの言葉も原作のままです。</li>
-<li>一部の説明や絵の中の文字は英語のままです。</li>
+<li>タイトルのメニュー、オプションのボタン、地図などの絵に描かれた字は英語のままです。</li>
+<li>GOG.com 版のままの設定では、オープニングに字幕が出ません（英語版でも同じです）。</li>
+<li>GOG Galaxy がゲームを更新・修復すると、<code>dosboxULTIMA1_single.conf</code> が元に戻ることがあります。そのときはもう一度上書きしてください。</li>
+</ul>
+
+<h2 id="ur">別の遊び方: Underworld Revisited（Windows アプリ）</h2>
+<p>原作を Unity で作り直したオープンソースの再実装版「Underworld Revisited」に日本語の表示を加えたものでも遊べます。
+現代式の操作や高画質の表示が選べ、メニューやヘルプまで日本語になっています。GOG.com 版のゲームのデータを読み込んで動きます。</p>
+<p><a class="dl sub" href="https://github.com/higesho/UnderworldRevisited/releases/tag/ja-preview-20261013">ダウンロード（GitHub）</a></p>
+<div class="shots">
+  <figure><img src="img/ur_talk.jpg" alt="Underworld Revisited での深淵の住人ブラギットとの会話の画面" loading="lazy"><figcaption>会話</figcaption></figure>
+  <figure><img src="img/ur_dungeon.jpg" alt="Underworld Revisited で地下迷宮の通路を歩く画面" loading="lazy"><figcaption>地下迷宮</figcaption></figure>
+  <figure><img src="img/ur_create.jpg" alt="Underworld Revisited のキャラクターの能力値と技能が並ぶ画面" loading="lazy"><figcaption>キャラクターの作成</figcaption></figure>
+</div>
+<h3>入れ方</h3>
+<ol>
+<li>Windows 10 以降の 64 ビット版と、DirectX 11 に対応したグラフィックカードが要ります。日本語は Windows に最初から入っているフォントで表示します。</li>
+<li>ダウンロードした <code>UnderworldRevisited-ja-preview-20261013-win64.zip</code> を、好きな場所に展開します。</li>
+<li>出てきたフォルダの中の <code>UR.exe</code> をダブルクリックします。
+初めて実行するとき、Windows の警告（「Windows によって PC が保護されました」）が出ることがあります。そのときは「詳細情報」を押してから「実行」を押してください。</li>
+<li>ゲームのフォルダが見つからないときは、フォルダを選ぶ画面が出ます。<code>game.gog</code> があるフォルダを選びます。選んだフォルダは次から覚えています。</li>
+</ol>
+<h3>外し方</h3>
+<ul>
+<li>展開したフォルダを消します。設定と、読み出したゲームのデータは <code>%USERPROFILE%\AppData\LocalLow\Underworld Revisited</code> にあります。すっかり消したいときは、このフォルダも消してください。</li>
+<li>セーブデータは DOS 版と同じ形で、ゲームのフォルダの中に保存されます。DOS 版と行き来して遊べます。</li>
+</ul>
+<h3>遊び方</h3>
+<ul>
+<li>操作は、はじめは原作と同じです。Shift＋F2 キーで、WASD キーとマウスで動く現代式の操作に切り替えられます。Tab キーでヘルプが開きます。</li>
+<li>設定は、メインメニューやゲームのメニューの上に並ぶ「ゲーム」「画質」「操作」「音声」などから変えられます。</li>
 </ul>
 
 <h2>ご意見・誤訳の報告</h2>
 <p>誤訳や不自然な訳、表示がおかしいところに気づいたら、<a href="https://github.com/higesho/ultima-ja/issues">GitHub の Issues</a> で教えてください。
-同梱のゲームプログラムは公式の Underworld Revisited ではないので、この日本語版について Underworld Revisited の作者に問い合わせないでください。</p>
+Underworld Revisited の日本語版は公式の Underworld Revisited ではないので、Underworld Revisited の作者に問い合わせないでください。</p>
 
 <h2>クレジット</h2>
 <ul>
-<li>ゲームは Underworld Revisited（<a href="https://github.com/PQMarine/UnderworldRevisited">https://github.com/PQMarine/UnderworldRevisited</a>、Copyright (c) PQMarine）で動かします。同梱のものは、日本語の表示を加えた非公式版です。Underworld Revisited は MIT License で配布されています。この非公式版のソースは <a href="https://github.com/higesho/UnderworldRevisited/tree/japanese-localization">https://github.com/higesho/UnderworldRevisited</a> の japanese-localization ブランチで公開しています。</li>
-<li>同梱のほかのソフトやフォントの使用許諾は、配布物の <code>LICENSE</code>、<code>THIRD_PARTY_NOTICES.md</code>、<code>ThirdParty</code> フォルダにあります。</li>
-<li>この日本語版の使用は自己責任でお願いします。</li>
+<li>日本語の表示に、美咲フォント（<a href="https://littlelimit.net/misaki.htm">門真 なむ</a>）と東雲フォント（<a href="http://openlab.ring.gr.jp/efont/shinonome/">/efont/</a>）を使っています。美咲フォントは自由に利用・複製・再配布できるフリーソフトウエア、東雲フォントはパブリックドメインです。</li>
+<li>Underworld Revisited（<a href="https://github.com/PQMarine/UnderworldRevisited">https://github.com/PQMarine/UnderworldRevisited</a>、Copyright (c) PQMarine）は MIT License で配布されています。日本語の表示を加えた非公式版のソースは <a href="https://github.com/higesho/UnderworldRevisited/tree/japanese-localization">https://github.com/higesho/UnderworldRevisited</a> の japanese-localization ブランチで公開しています。</li>
+<li>このパッチの使用は自己責任でお願いします。</li>
 </ul>
 </div>
 </main>

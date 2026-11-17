@@ -26,7 +26,7 @@ GOG.com で販売されている版を対象に、I から VIII までを順に�
 | ウルティマIX（Ultima IX: Ascension） | 公式日本語版の入れ方を案内 | [紹介ページ](https://higesho.github.io/ultima-ja/ultima9/) |
 | 外伝 マーシャン・ドリームズ（Worlds of Ultima: Martian Dreams） | 公開中 | [MartianDreams_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/martian-v1.1) |
 | 外伝 サベージ・エンパイア（Worlds of Ultima: The Savage Empire） | 公開中 | [SavageEmpire_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/savage-v1.1) |
-| 外伝 ウルティマ アンダーワールド（Ultima Underworld: The Stygian Abyss） | 公開中 | [UnderworldRevisited-ja-preview-20261013-win64.zip](https://github.com/higesho/UnderworldRevisited/releases/tag/ja-preview-20261013) |
+| 外伝 ウルティマ アンダーワールド（Ultima Underworld: The Stygian Abyss） | 公開中 | [UltimaUnderworld_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/underworld-v1.0) |
 | 外伝 ウルティマ アンダーワールドII（Ultima Underworld II: Labyrinth of Worlds） | 準備中 | — |
 
 入れ方と外し方は、サイトの各作品のページをご覧ください。
@@ -42,6 +42,6 @@ GOG.com で販売されている版を対象に、I から VIII までを順に�
 - 東雲フォント: The Electronic Font Open Laboratory。Public Domain です。
 - ウルティマVII とサーペントアイルのパッチは Exult（Copyright (C) The Exult Team、GNU General Public License）に日本語の表示などを加えたものです。ソースは https://github.com/higesho/exult の ja ブランチで公開しています。
 - ウルティマVIII のパッチは、ScummVM（Copyright (C) The ScummVM Team、GNU General Public License）に日本語版を認識させる変更を加えた非公式ビルドで動かします。ソースは https://github.com/higesho/scummvm の ja ブランチで公開しています。
-- ウルティマ アンダーワールドの日本語版は、Underworld Revisited（Copyright (c) PQMarine、MIT License）に日本語の表示を加えた非公式版です。ソースは https://github.com/higesho/UnderworldRevisited の japanese-localization ブランチで公開しています。
+- ウルティマ アンダーワールドは、DOS 版の日本語化パッチのほかに、Underworld Revisited（Copyright (c) PQMarine、MIT License）に日本語の表示を加えた非公式版でも遊べます。そのソースは https://github.com/higesho/UnderworldRevisited の japanese-localization ブランチで公開しています。
 - PixelMplus: itouhiro、M+ FONTS PROJECT。M+ FONT LICENSE により、自由に利用・複製・再配布できます。
 - Ultima は Electronic Arts Inc. の商標です。ゲームの画像・文章の権利は原作の権利者にあります。
