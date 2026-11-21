@@ -19,12 +19,12 @@ GOG.com で販売されている版を対象に、I から VIII までを順に�
 | ウルティマIII（Ultima III: Exodus） | 公開中 | [Ultima3_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima3-v1.1) |
 | ウルティマIV（Ultima IV: Quest of the Avatar） | 公開中 | [Ultima4_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima4-v1.2) |
 | ウルティマV（Ultima V: Warriors of Destiny） | 公開中 | [Ultima5_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima5-v1.1) |
-| ウルティマVI（Ultima VI: The False Prophet） | 公開中 | [Ultima6_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima6-v1.1) |
+| ウルティマVI（Ultima VI: The False Prophet） | 公開中 | [Ultima6_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima6-v1.2) |
 | ウルティマVII（Ultima VII: The Black Gate ＋ The Forge of Virtue） | 公開中 | [Ultima7_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima7-v1.1) |
 | ウルティマVII 第2部 サーペントアイル（Ultima VII Part Two: Serpent Isle ＋ The Silver Seed） | 公開中 | [SerpentIsle_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima7si-v1.1) |
 | ウルティマVIII（Ultima VIII: Pagan） | 公開中 | [Ultima8_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/ultima8-v1.1) |
 | ウルティマIX（Ultima IX: Ascension） | 公式日本語版の入れ方を案内 | [紹介ページ](https://higesho.github.io/ultima-ja/ultima9/) |
-| 外伝 マーシャン・ドリームズ（Worlds of Ultima: Martian Dreams） | 公開中 | [MartianDreams_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/martian-v1.1) |
+| 外伝 マーシャン・ドリームズ（Worlds of Ultima: Martian Dreams） | 公開中 | [MartianDreams_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/martian-v1.2) |
 | 外伝 サベージ・エンパイア（Worlds of Ultima: The Savage Empire） | 公開中 | [SavageEmpire_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/savage-v1.1) |
 | 外伝 ウルティマ アンダーワールド（Ultima Underworld: The Stygian Abyss） | 公開中 | [UltimaUnderworld_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/underworld-v1.3) |
 | 外伝 ウルティマ アンダーワールドII（Ultima Underworld II: Labyrinth of Worlds） | 公開中 | [UltimaUnderworld2_JP.zip](https://github.com/higesho/ultima-ja/releases/tag/underworld2-v1.2) |
