@@ -62,7 +62,11 @@ static char g_dir[MAX_PATH], g_ini[MAX_PATH];
 static int cfg_font = 1;        /* 1 = 東雲、0 = 美咲（描き直さない） */
 static int cfg_aspect = 1;      /* 1 = 4:3 を保つ */
 static int cfg_linear = 1;      /* 1 = なめらかに広げる */
+#ifdef UJ_TEST  /* 試験版だけ: dump=1 で、受け取った絵を BMP に保存する */
 static int cfg_w = 960, cfg_h = 720, cfg_remember = 1, cfg_log = 0, cfg_dump = 0, cfg_enabled = 1;
+#else
+static int cfg_w = 960, cfg_h = 720, cfg_remember = 1, cfg_log = 0, cfg_enabled = 1;
+#endif
 static FILE *g_log;
 
 static void plog(const char *fmt, ...) {
@@ -83,7 +87,9 @@ static void load_cfg(void) {
     cfg_h = GetPrivateProfileIntA("view", "height", 720, g_ini);
     cfg_remember = GetPrivateProfileIntA("view", "remember", 1, g_ini);
     cfg_log = GetPrivateProfileIntA("view", "log", 0, g_ini);
+#ifdef UJ_TEST
     cfg_dump = GetPrivateProfileIntA("view", "dump", 0, g_ini);
+#endif
     cfg_enabled = GetPrivateProfileIntA("view", "enabled", 1, g_ini);
     if (cfg_w < 320) cfg_w = 320;
     if (cfg_h < 200) cfg_h = 200;
@@ -494,6 +500,7 @@ static void compose(void) {
     }
 }
 
+#ifdef UJ_TEST  /* 試験版だけ */
 static void dump_bmp(void) {
     static DWORD last;
     static int n;
@@ -514,6 +521,7 @@ static void dump_bmp(void) {
     fclose(f);
     plog("絵を保存: %s", p);
 }
+#endif
 
 /* ---------------------------------------------------------------- 窓 */
 static HWND g_wnd;
@@ -661,7 +669,11 @@ static void draw_frame(void) {
         plog("作業場が変わった: %p", (void *)ctx);
     }
     hook_window(WindowFromDC(dc));
+#ifdef UJ_TEST
     if (g_dirty) { compose(); dump_bmp(); g_dirty = 0; }
+#else
+    if (g_dirty) { compose(); g_dirty = 0; }
+#endif
     if (!g_canvas || !g_wnd) { g_in_draw = 0; return; }
     GetClientRect(g_wnd, &rc);
     if (rc.right <= 0 || rc.bottom <= 0) { g_in_draw = 0; return; }

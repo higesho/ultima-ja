@@ -9,6 +9,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 TOP = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
 DLL = os.path.join(HERE, 'out', 'opengl32.dll')
+DLL_KEY = {'Akalabeth_JP.zip': 'akalabeth', 'Ultima3_JP.zip': 'ultima3', 'Ultima4_JP.zip': 'ultima4', 'Ultima5_JP.zip': 'ultima5',
+           'Ultima6_JP.zip': 'ultima6', 'MartianDreams_JP.zip': 'martian', 'SavageEmpire_JP.zip': 'savage'}
 INI = os.path.join(HERE, 'ultima_ja.ini')
 README = 'はじめにお読みください.txt'
 sys.path.insert(0, HERE)
@@ -136,7 +138,9 @@ def make(game, zname, ver, dry):
     if dry: return
     names = [n for n, _ in entries]
     k = names.index(README)
-    entries[k:k] = [('DOSBOX/opengl32.dll', open(DLL, 'rb').read()), ('DOSBOX/ultima_ja.ini', open(INI, 'rb').read())]
+    # ウルティマの 7 作は、作品ごとの配布版の DLL（build.bat で作る out\<作品>\opengl32.dll）を入れる
+    dll = os.path.join(HERE, 'out', DLL_KEY[zname], 'opengl32.dll') if zname in DLL_KEY else DLL
+    entries[k:k] = [('DOSBOX/opengl32.dll', open(dll, 'rb').read()), ('DOSBOX/ultima_ja.ini', open(INI, 'rb').read())]
     for z in zips:
         zpath = os.path.join(dist, z)
         tmp = zpath + '.tmp'

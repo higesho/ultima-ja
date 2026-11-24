@@ -33,7 +33,9 @@ def make(n, com, zname, extra=()):
         open(os.path.join(src, confname), "wb").write(conf.encode("latin-1"))
 
     os.makedirs(os.path.join(src, "DOSBOX"), exist_ok=True)
-    shutil.copyfile(DLL, os.path.join(src, "DOSBOX", "opengl32.dll"))
+    # 配布版の DLL（build.bat で作る。I は out\opengl32.dll、II は out\ultima2\opengl32.dll）
+    dll = DLL if n == 1 else os.path.join(HERE, "out", "ultima2", "opengl32.dll")
+    shutil.copyfile(dll, os.path.join(src, "DOSBOX", "opengl32.dll"))
     shutil.copyfile(INI, os.path.join(src, "DOSBOX", "ultima_ja.ini"))
 
     # 説明書: BOM 付き UTF-8、改行は CRLF

@@ -8,6 +8,9 @@ sys.stdout.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 TOP = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
 STATE = os.path.join(HERE, '..', 'test', 'dosbox_ctl.json')
+TEST_KEY = {'Akalabeth - World of Doom': 'akalabeth', 'Ultima 1': 'ultima1', 'Ultima 2': 'ultima2', 'Ultima 3': 'ultima3',
+            'Ultima 4 - Quest of the Avatar': 'ultima4', 'Ultima 5': 'ultima5', 'Ultima 6': 'ultima6',
+            'Martian Dreams': 'martian', 'The Savage Empire': 'savage'}
 VIEW = ("[sdl]\r\nfullscreen=false\r\nwindowresolution=960x720\r\noutput=opengl\r\n\r\n"
         "[render]\r\naspect=false\r\nscaler=none\r\n\r\n")
 
@@ -32,8 +35,13 @@ def make(game, zpath=None):
             out = os.path.join(sim, *i.filename.split('/'))
             os.makedirs(os.path.dirname(out), exist_ok=True)
             open(out, 'wb').write(data)
+    # ウルティマの 9 作は、DLL を試験版（build.bat test で作る out\test\<作品>\opengl32.dll）に入れ替える
     dll = os.path.join(sim, 'DOSBOX', 'opengl32.dll')
-    if not os.path.exists(dll): shutil.copyfile(os.path.join(HERE, 'out', 'opengl32.dll'), dll)
+    os.makedirs(os.path.dirname(dll), exist_ok=True)
+    if game in TEST_KEY:
+        shutil.copyfile(os.path.join(HERE, 'out', 'test', TEST_KEY[game], 'opengl32.dll'), dll)
+    elif not os.path.exists(dll):
+        shutil.copyfile(os.path.join(HERE, 'out', 'opengl32.dll'), dll)
     ini = os.path.join(sim, 'DOSBOX', 'ultima_ja.ini')
     if not os.path.exists(ini): shutil.copyfile(os.path.join(HERE, 'ultima_ja.ini'), ini)
     s = open(ini, 'rb').read().replace(b'log=0', b'log=1').replace(b'remember=1', b'remember=0')

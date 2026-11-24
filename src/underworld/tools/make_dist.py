@@ -4,7 +4,9 @@
   - UWJP（UW2JP）.COM・.DAT は試験用の部分を入れずに組み立て直す
   - dosboxULTIMAn_single.conf は GOG の元の設定に、表示の設定（[sdl] output=opengl、[render] glshader=sharp）と
     autoexec の LH ????.COM を足したもの
-  - DOSBOX\\opengl32.dll は gl64/out の 64 ビット版（dosbox-staging 用）"""
+  - DOSBOX\\opengl32.dll は glu/out64 の 64 ビット版（GOG 付属の dosbox-staging 用）
+  - DOSBOX_32bit\\opengl32.dll は glu/out32 の 32 ビット版（DOSBox 0.74 などの 32 ビットの DOSBox 用）
+  - UW2 は glu/out64_uw2・glu/out32_uw2 を使う（中身は同じで、バージョン情報だけが違う）"""
 import os, re, sys, shutil, subprocess, zipfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -21,6 +23,8 @@ GAMES = {
 
 def patched_conf(g):
     t = open(os.path.join(g['dir'], g['conf']), 'rb').read().decode('latin1')
+    if t.startswith('# Japanese patch'):  # ゲームのフォルダにはもうパッチが入っている。元の設定は backup_<game>_real に取ってある
+        t = open(os.path.join(WORK, 'backup_' + g['key'] + '_real', g['conf']), 'rb').read().decode('latin1')
     nl = '\r\n' if '\r\n' in t else '\n'
     head = nl.join(['# Japanese patch: OpenGL output (for DOSBOX\\opengl32.dll) and sharp scaling',
                     '[sdl]', 'output=opengl', '', '[render]', 'glshader=sharp', '', ''])
@@ -30,7 +34,7 @@ def patched_conf(g):
 
 
 def main(game):
-    g = GAMES[game]
+    g = dict(GAMES[game], key=game)
     out = os.path.join(WORK, 'dist', g['folder']); zpath = os.path.join(WORK, 'dist', g['zip'])
     env = dict(os.environ); env.pop('UWJP_TEST', None)
     build = os.path.join(WORK, 'build', 'release_' + game)
@@ -40,14 +44,17 @@ def main(game):
     print(r.stdout[-400:], r.stderr[-400:])
     if r.returncode: sys.exit('組み立てに失敗')
     if os.path.exists(out): shutil.rmtree(out)
-    os.makedirs(os.path.join(out, 'DOSBOX'))
+    os.makedirs(os.path.join(out, 'DOSBOX')); os.makedirs(os.path.join(out, 'DOSBOX_32bit'))
     for f in (g['name'] + '.COM', g['name'] + '.DAT'): shutil.copy(os.path.join(build, f), os.path.join(out, f))
     open(os.path.join(out, g['conf']), 'wb').write(patched_conf(g))
-    shutil.copy(os.path.join(WORK, 'gl64', 'out', 'opengl32.dll'), os.path.join(out, 'DOSBOX', 'opengl32.dll'))
+    for b, d in ((64, 'DOSBOX'), (32, 'DOSBOX_32bit')):
+        shutil.copy(os.path.join(WORK, 'glu', 'out%d%s' % (b, '_uw2' if game == 'uw2' else ''), 'opengl32.dll'),
+                    os.path.join(out, d, 'opengl32.dll'))
     ini = ['; 日本語化パッチの表示の設定（DOSBOX フォルダの opengl32.dll が読みます）', '[view]',
            '; 日本語の字の形: shinonome（東雲フォント 12 ドット）または misaki（美咲フォント 8 ドット）', 'font=shinonome',
            '; うまく表示されないとき 1 にすると、ultima_ja.log に記録します', 'log=0', '']
-    open(os.path.join(out, 'DOSBOX', 'ultima_ja.ini'), 'wb').write('\r\n'.join(ini).encode('cp932'))
+    for d in ('DOSBOX', 'DOSBOX_32bit'):
+        open(os.path.join(out, d, 'ultima_ja.ini'), 'wb').write('\r\n'.join(ini).encode('cp932'))
     readme = open(os.path.join(WORK, 'dist_src', g['readme']), encoding='utf-8').read()
     open(os.path.join(out, 'はじめにお読みください.txt'), 'wb').write(
         b'\xef\xbb\xbf' + readme.replace('\r\n', '\n').replace('\n', '\r\n').encode('utf-8'))
